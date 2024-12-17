@@ -1,0 +1,251 @@
+/* General Styling */
+body {
+  font-family: "Poppins", sans-serif; /* Modern font */
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.container {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: auto; */
+  margin: auto;
+}
+h2.text-center {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Form Container */
+form.bg-light {
+  background: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form.bg-light:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Inputs and Labels */
+form label {
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #495057;
+  margin-bottom: 8px;
+}
+
+form .form-control {
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  color: #495057;
+  background-color: #f1f3f5;
+  margin-bottom: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+form .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+  border: 1px solid #3498db;
+  background-color: #ffffff;
+}
+
+/* Button Styling */
+form .btn-success {
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form .btn-success:hover {
+  background-color: #2980b9;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Responsive Form */
+@media (max-width: 768px) {
+  form.bg-light {
+    padding: 20px;
+  }
+
+  h2.text-center {
+    font-size: 1.5rem;
+  }
+}
+/* General Table Styling */
+.table-responsive {
+  margin-top: 20px;
+}
+
+table.table {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+table.table:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+thead.table-primary {
+  background-color: #4caf50;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+thead.table-primary th {
+  padding: 15px;
+  text-align: center;
+}
+
+tbody tr {
+  border-bottom: 1px solid #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+/* Table Data Cells */
+td {
+  text-align: center;
+  padding: 12px;
+  font-size: 1rem;
+  color: #333333;
+  vertical-align: middle;
+  font-weight: 500;
+  border: 0.1px solid powderblue;
+}
+
+/* Editable Inputs */
+td input.form-control {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 6px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Colorful Buttons */
+button.btn {
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  margin: 3px;
+}
+
+/* Edit Button */
+button.btn-primary {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+button.btn-primary:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.3);
+}
+
+/* Save Button */
+button.btn-success {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+
+button.btn-success:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(46, 204, 113, 0.3);
+}
+
+/* Delete Button */
+button.btn-danger {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+
+button.btn-danger:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(231, 76, 60, 0.3);
+}
+
+/* Responsive Styling for Table */
+@media (max-width: 768px) {
+  table.table thead {
+    display: none;
+  }
+
+  table.table,
+  table.table tbody,
+  table.table tr,
+  table.table td {
+    display: block;
+    width: 100%;
+  }
+
+  table.table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+
+  table.table td {
+    text-align: left;
+    padding: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  table.table td:before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #555;
+  }
+}
